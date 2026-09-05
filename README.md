@@ -120,4 +120,3 @@ Customer-Shopping-Behavior-Analysis/
 └── README.md
 ```
 
-**Before publishing:** replace `ADD_FINAL_PBIX_HERE.txt` with your actual Power BI `.pbix` file.
