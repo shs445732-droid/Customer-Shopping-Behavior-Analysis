@@ -1,122 +1,205 @@
-# Customer Shopping Behavior Analysis
+Customer Shopping Behavior Analysis
 
-## Business Analytics Internship Project
+Business Analytics Internship Project
 
-**Internship Organization:** Wahy Lab Solutions  
-**Project:** Customer Shopping Behavior Analysis  
-**Author:** Sreehari S.  
-**Year:** 2026
+Internship Organization: Wahy Lab Solutions
+Project: Customer Shopping Behavior Analysis
+Author: Sreehari S.
+Year: 2026
 
-## Project Overview
+📌 Project Overview
 
 This project analyzes customer shopping behavior to identify purchasing patterns, customer segments, product performance, seasonal trends, and marketing-related purchase drivers.
 
-SQL is used for data preparation, validation, analysis, and customer segmentation. Power BI is used to present the findings through an interactive dashboard.
+The analysis uses SQL for data preparation, validation, analysis, and customer segmentation, and Power BI for interactive dashboard development and visualization.
 
-## Objectives
+🎯 Project Objectives
 
-- Analyze customer purchasing behavior.
-- Identify sales performance by category, season, gender, location, and product.
-- Segment customers based on previous purchase behavior.
-- Examine discounts, promotional codes, subscriptions, payment methods, and shipping types.
-- Build an interactive Power BI dashboard.
-- Provide practical business recommendations.
+Analyze overall customer purchasing behavior
 
-## Dataset
+Identify high-performing product categories and products
 
-The dataset contains **3,900 customer purchase records** and includes:
+Understand customer demographics and purchasing patterns
 
-- Customer ID
-- Age
-- Gender
-- Item Purchased
-- Category
-- Purchase Amount (USD)
-- Location
-- Size
-- Color
-- Season
-- Review Rating
-- Subscription Status
-- Shipping Type
-- Discount Applied
-- Promo Code Used
-- Previous Purchases
-- Payment Method
-- Frequency of Purchases
+Segment customers based on previous purchases
 
-## Tools Used
+Analyze seasonal sales patterns
 
-- MySQL 8.0
-- SQL
-- Microsoft Power BI
-- Microsoft Excel / CSV
-- GitHub
+Examine discounts and promotional codes
 
-## Customer Segmentation
+Analyze payment and shipping preferences
 
-| Previous Purchases | Segment |
-|---:|---|
-| 1–10 | New Customer |
-| 11–30 | Regular Customer |
-| 31–50 | Loyal Customer |
+Evaluate customer review ratings
 
-## Key Results
+Develop an interactive Power BI dashboard
 
-- Total Sales: **$233,081**
-- Total Purchases: **3,900**
-- Average Purchase: **$59.76**
-- Clothing generated the highest category sales: **$104,264**
-- Fall recorded the highest seasonal sales: **$60,018**
-- Loyal customers generated approximately **$92,984** in sales.
-- Regular customers generated approximately **$92,533** in sales.
-- Sales without discounts were approximately **$133,670**, compared with **$99,411** with discounts.
+Provide actionable business recommendations
 
-## Power BI Dashboard
+🗂️ Dataset
 
-The dashboard contains four pages:
+The dataset contains 3,900 customer purchase records and includes customer ID, age, gender, item purchased, category, purchase amount, location, size, color, season, review rating, subscription status, shipping type, discount and promo usage, previous purchases, payment method, and purchase frequency.
+
+🛠️ Tools & Technologies
+
+MySQL – Data preparation, validation, analysis and segmentation
+
+Power BI – Interactive dashboards and visualization
+
+DAX – Measures and analytical calculations
+
+Excel / CSV – Dataset handling
+
+GitHub – Project documentation and version control
+
+👥 Customer Segmentation
+
+Customers were grouped using the number of previous purchases:
+
+Previous Purchases
+
+Customer Segment
+
+1–10
+
+New Customer
+
+11–30
+
+Regular Customer
+
+31–50
+
+Loyal Customer
+
+This is a project-defined analytical classification used to compare customer behavior.
+
+📊 Key Findings
+
+Total Sales: $233,081
+
+Total Purchases: 3,900
+
+Average Purchase: $59.76
+
+Average Previous Purchases: 25.35
+
+Average Review Rating: approximately 3.75
+
+Category Performance
+
+Category
+
+Sales
+
+Clothing
+
+$104,264
+
+Accessories
+
+$74,200
+
+Footwear
+
+$36,093
+
+Outerwear
+
+$18,524
+
+Clothing generated the highest sales.
+
+Customer Segments
+
+Segment
+
+Customers
+
+Total Sales
+
+New Customer
+
+784
+
+$47,564
+
+Regular Customer
+
+1,567
+
+$92,533
+
+Loyal Customer
+
+1,549
+
+$92,984
+
+Regular and Loyal customers together account for the majority of sales, highlighting the importance of customer retention.
+
+📈 Power BI Dashboard
+
+The dashboard contains four analytical pages:
 
 1. Executive Overview
+
+Overall sales, purchases, average purchase value, ratings, customers, category performance, seasonal sales, gender and customer segments.
+
 2. Customer Analysis
+
+Customer demographics, age distribution, gender, customer segments and subscription status.
+
 3. Product & Sales Analysis
+
+Category performance, top products, seasonal sales, locations and category-season patterns.
+
 4. Marketing & Purchase Drivers
 
-Dashboard screenshots are included in `Dashboard_Screenshots/`.
+Discounts, promotional codes, payment methods, subscriptions, review ratings and shipping types.
 
-## Recommendations
+Dashboard screenshots are included in this repository.
 
-- Strengthen inventory and marketing for high-performing Clothing products.
-- Use loyalty and retention initiatives for Regular and Loyal customers.
-- Apply discounts and promotional campaigns selectively rather than universally.
-- Plan inventory and campaigns around seasonal demand.
-- Monitor customer review ratings and investigate lower-rated areas.
-- Promote high-performing products using customer and category insights.
+💡 Business Recommendations
 
-## Limitations
+Strengthen Clothing performance – Maintain strong inventory and targeted marketing for the highest-performing category.
 
-- The dataset does not contain a transaction date, so time-series trends cannot be analyzed.
-- A separate online/offline sales-channel field is not available in the dataset.
-- Customer segmentation is a project-defined classification based on previous purchases.
-- The analysis identifies patterns and associations; it does not establish causation.
+Focus on customer retention – Develop loyalty programs and personalized offers for Regular and Loyal customers.
 
-## Repository Structure
+Use discounts strategically – Target promotions rather than relying on blanket discounts.
 
-```text
+Plan around seasonal demand – Use seasonal patterns for inventory planning and campaign timing.
+
+Promote high-performing products – Give greater visibility to products with strong sales performance.
+
+Monitor customer satisfaction – Track review ratings by category and investigate lower-rated areas.
+
+📁 Project Contents
+
 Customer-Shopping-Behavior-Analysis/
+│
 ├── SQL/
-│   ├── 01_Data_Cleaning.sql
-│   ├── 02_SQL_Analysis.sql
-│   └── 03_Customer_Segmentation.sql
 ├── PowerBI/
-│   └── ADD_FINAL_PBIX_HERE.txt
 ├── Report/
-│   └── Customer_Shopping_Behavior_Analysis_Internship_Report.pdf
 ├── Dashboard_Screenshots/
-│   ├── 01_Executive_Overview.png
-│   ├── 02_Customer_Analysis.png
-│   ├── 03_Product_and_Sales_Analysis.png
-│   └── 04_Marketing_and_Purchase_Drivers.png
 ├── customer_shopping_behavior_clean.csv
 └── README.md
-```
 
+⚠️ Project Limitations
+
+The dataset does not contain transaction dates, so time-series analysis could not be performed.
+
+A separate online/offline sales-channel field is not available, so channel comparison could not be performed.
+
+Customer segments are based on a project-defined rule using previous purchases.
+
+The analysis identifies patterns and associations; it does not establish causality.
+
+📄 Internship Report
+
+The detailed internship report is included in the repository and contains the project background, methodology, analysis, dashboard outputs, findings, recommendations and conclusion.
+
+👤 Author
+
+Sreehari S.
+Business Analytics Internship Project
+2026
